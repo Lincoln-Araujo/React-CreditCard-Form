@@ -1,10 +1,10 @@
 import './App.css';
-import CTAButton from './components/button/CTAButton'
+import GenericForm from './components/forms/GenericForm'
 
 function App() {
   return (
     <div className="App">
-      <CTAButton nameButton="Confirm"/>
+      <GenericForm />
     </div>
   );
 }
