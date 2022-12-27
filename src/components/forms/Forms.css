@@ -6,3 +6,18 @@
     margin: 8px auto;
 }
 
+.title-form {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.text-form {
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid #220930;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 16px;
+}
