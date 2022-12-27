@@ -4,7 +4,7 @@ import GenericForm from './components/forms/GenericForm'
 function App() {
   return (
     <div className="App">
-      <GenericForm />
+      <GenericForm titleform='cardholder name'/>
     </div>
   );
 }
