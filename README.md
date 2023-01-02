@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# React CreditCard Form
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="./presentation.gif" alt="presentation">
 
-## Available Scripts
+# Index
 
-In the project directory, you can run:
+- [About the project](#id01)
+- [How to clone this project](#id02)
+- [Debugging this project](#id03)
+- [Technologies](#id04)
+- [Contact Information](#id06)
 
-### `npm start`
+# About the project <a name="id01"></a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+An interactive card form that show to the users if they are typing something wrong and also display a card image that is filled with data that the user provided.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📝 How to clone this project <a name="id02"></a>
 
-### `npm test`
+Copy the code below:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/Lincoln-Araujo/React-CreditCard-Form.git
+```
 
-### `npm run build`
+Open the file where you put the cloned project in some IDe of your choice (I use VSCode) and download all the dependencies through the terminal using the command below:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## :arrow_double_down: Debugging this project <a name="id03"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+After you have downloaded the project's dependencies, use the following command in the terminal to start the local server:
 
-### `npm run eject`
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+A new window or tab should open in your main browser with the react project.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## :pushpin: Technologies <a name="id04"></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* React.js 
+    - useState
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Javascript
 
-## Learn More
+* HTML
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* CSS 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+# :iphone: Contact Information <a name="id06"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Lincoln Araujo :coffee:
 
-### Analyzing the Bundle Size
+LinkedIn - [Lincoln Araujo](https://www.linkedin.com/in/lincolnaraujo/?locale=pt_BR)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Whatsapp - [+5561991175531](https://api.whatsapp.com/send?phone=5561991175531&text=Ol%C3%A1,%20acessei%20seu%20Link%20Personalizado%20What%27s%20Link)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Email : lincoln.fa@hotmail.com

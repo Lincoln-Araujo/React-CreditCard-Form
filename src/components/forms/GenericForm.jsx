@@ -3,17 +3,18 @@ import './Forms.css';
 
 export default function GenericForm(props) {
 
-  const [value, setValue] = useState(props.value);
+  const [formValues, setFormValues] = useState({});
 
   const handleInputChange = e => {
-    console.log('*** handleInputChange', e.target.value);
-    setValue(e.target.value);
+    const { name, value } = e.target;
+    setFormValues({...formValues, [name]: value})
   };
 
   const handleSubmit = e => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);
+
     console.log("*** handleSubmit", data);
   }
   
@@ -33,7 +34,8 @@ export default function GenericForm(props) {
           name={props.name} 
           placeholder={props.placeholder}
           onChange={handleInputChange}
-          value={value} />
+          
+        />
     </form>
   );
   
