@@ -19,24 +19,27 @@ export default function GenericForm(props) {
   }
   
   return (
-    <form 
-      className='generic-form' 
-      onSubmit={handleSubmit}>
+    <div className='form-container'>
+
+      <form 
+        className='generic-form' 
+        onSubmit={handleSubmit}>
+        
         <label 
           for="post-text" 
           className="title-form">
-            {props.titleform}
+              cardholder name
         </label>
         <input 
           className='text-form' 
-          id={props.id} 
-          type={props.type} 
-          name={props.name} 
-          placeholder={props.placeholder}
-          onChange={handleInputChange}
-          
+          id="cardholder name" 
+          type="text"
+          name="cardholder name"
+          placeholder="e.g. Jane Applessed"
         />
-    </form>
+      </form>
+      
+    </div>
   );
   
 }
