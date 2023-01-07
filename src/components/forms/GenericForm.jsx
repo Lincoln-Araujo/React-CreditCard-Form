@@ -1,30 +1,20 @@
-import { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import CTAButton from '../button/CTAButton';
 import './Forms.css';
 
 export default function GenericForm(props) {
 
-  const [formValues, setFormValues] = useState({});
-
-  const handleInputChange = e => {
-    const { name, value } = e.target;
-    setFormValues({...formValues, [name]: value})
+  const { register, handleSubmit } = useForm();
+  
+  const onSubmit = (data) => {
+    console.log(data)
   };
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    const data = Object.fromEntries(formData);
-
-    console.log("*** handleSubmit", data);
-  }
   
   return (
     <div className='form-container'>
 
       <form 
-        className='generic-form' 
-        onSubmit={handleSubmit}>
-        
+        className='generic-form' >        
         <label 
           for="post-text" 
           className="title-form">
@@ -32,13 +22,30 @@ export default function GenericForm(props) {
         </label>
         <input 
           className='text-form' 
-          id="cardholder name" 
           type="text"
           name="cardholder name"
           placeholder="e.g. Jane Applessed"
+          { ...register("cardholder name") }
         />
       </form>
-      
+
+      <form 
+        className='generic-form' >        
+        <label 
+          for="post-text" 
+          className="title-form">
+              card number
+        </label>
+        <input 
+          className='text-form' 
+          type="text"
+          name="card number"
+          placeholder="XXXX XXXX  XXXX XXXX"
+          { ...register("card number") }
+        />
+      </form>
+
+      <CTAButton onClick={() => handleSubmit(onSubmit)()} nameButton="Confirm"/>
     </div>
   );
   
